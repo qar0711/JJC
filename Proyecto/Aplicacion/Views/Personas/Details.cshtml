@@ -1,0 +1,71 @@
+﻿@model BDts.Persona
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Persona</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pri_nom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pri_nom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Seg_nom)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Seg_nom)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Pri_ape)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Pri_ape)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Seg_ape)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Seg_ape)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cedula)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cedula)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Imagen)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Imagen)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Genero)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Genero)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Correo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Correo)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
